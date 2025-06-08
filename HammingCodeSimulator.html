@@ -1,0 +1,99 @@
+<html>
+    <head>
+                <title>Simulator</title>
+                <style>
+                    .memory
+{
+    background-color: rgb(139, 139, 175);
+    position:relative;
+    top:150px;
+    left: 100px;
+    display:inline-block;
+    width: 30%;
+    height: 70%;
+    
+}
+.memory h1
+{
+    color: cadetblue;
+    text-align: center;
+}
+.main
+{
+    background-color: rgb(56, 52, 52);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.output
+{
+    background-color:rgb(114, 114, 28);
+    position:relative;
+}
+.okubuton
+{
+    background-color: chartreuse;
+    position:relative;
+    left: 75%;
+
+}
+
+                </style>
+    </head>
+    <body>
+    <div class="main"> 
+        <form id="form">
+            <label for="binaryData">memory'e gidecek veri</label>
+            <input type="text" name="binaryData" id="binaryData">
+            <button type="submit">
+            memory'e gönder
+            </button>
+        </form>
+        <div class="memory">
+            <h1>Memory</h1>
+        </div>
+        <div class="output">
+        </div>
+        <form action="">
+            <label for="hataPozisyon">Hata için bit pozisyonu</label>
+            <input type="text" name="hataPozisyon">
+            <button class="okuButon" id="okuButon">veriyi bellekten oku</button>
+        </form>
+    
+    </div>
+    <script>
+        let form=document.getElementById("form");
+form.addEventListener("submit",(e)=>
+{
+    e.preventDefault();
+    let inputData=form.elements['binaryData'].value;
+    let hammingCodedData="";
+    for(let i=0;i<inputData.length;i++)
+    {
+        if((inputData[i]==0 || inputData[i]==1)&&(inputData.length==11 || inputData.length==26||inputData.length==4))
+        {
+            Math.pow(2,)
+
+            hammingCodedData=;
+            
+        }
+        else
+        {
+            alert("Binary veri girin");
+            form.reset();
+        }
+    }
+
+}
+
+);
+let button1=document.getElementById("okuButon");
+button1.addEventListener("submit",(e)=>
+{
+    e.preventDefault();
+    
+})
+     
+    </script>
+    </body>
+</html>
